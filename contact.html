@@ -1,41 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fashion Blog">
+    <meta name="keywords" content="Vintage,Sustainable,Thrift,DIY">
+    <meta name="author" content="Edmunds,I">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>Contact</title>
-    <style type="text/css">
-        ul {
-          list-style-type: none;
-          margin: 10px;
-          padding: 10px;
-          overflow: hidden;
-          background-color:rgb(235, 208, 169);
-          display: inline-block;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          color:rgb(43, 42, 37);
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-weight: bold;
-        }
-        li a:hover {
-          background-color: blanchedalmond;
-        }
-        .logo{
+    <style>
+      .jumbotron{
+            background-image: url("bg.PNG");
             text-align: center;
+            font-weight: bold;
         }
-        header{
-          text-align: center;
-          background-color: rgb(235, 208, 169);
-          line-height: 2.5px;
+        .card img{
+            height: 650px;
+            width: auto;
+            border: 5px;
         }
         p {
             color:rgb(43, 42, 37);
@@ -48,7 +34,8 @@
         }
 
         div.background {
-            background-color: rgb(235, 208, 169);
+            background-color: transparent;
+            border: black solid;
             width: 650px;
             margin-left: auto;
             margin-right: auto;
@@ -60,51 +47,93 @@
             text-align: center;
         }
     </style>
-</head>
-<body>
-        <p class="logo">
-                <img src="logo.PNG" alt="88vintage" title="88vintage">
-            </p>
-            <header>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="impact.html">Impact</a>
-                    <a href="brands.html">Sustainable Brands</a>
-                    <a href="diy.html">DIY Tutorials</a>
-                    <a href="thrifting.html">Thrifting 101</a>
-                    <a href="sitemap.html">Site Map</a>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            </header>
-            <h1>Subscribe!</h1>
-            <div class="background">
-                <form action="">
-                    <p>
-                        First Name:
-                        <input type="text" name="fName" maxlength="100" size="20" value="" />
-                        Last Name:
-                        <input type="text" name="lName" maxlength="100" size="20" value="" />
+    <script text="text/javascript"> 
+   
+        function vform(){
+            let myForm= document.getElementById("form1")
+            let first= myForm.fName.value
+            let last= myForm.lName.value
+            let mail= myForm.Email.value
+            if (first== "" || last== "" || mail== ""){
+                alert("Please enter a response!")
+            } 
+            else{}
+            return false;
+        }
+    </script>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="impact.html">Impact</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sitemap.html">Site Map</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="thrifting.html">Thrifting 101 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="brands.html">Sustainable Brands <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="diy.html">Denim DIY <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="lookbook.html">Lookbook<span class="sr-only">(current)</span></a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    <div class="jumbotron">
+     <br>
+     <br>
+      
+     <h1>Subscribe!</h1>
+     <div class="background">
+         <form id="form1" action="">
+             <p>
+                 First Name:
+                 <input type="text" name="fName" maxlength="100" size="20" value="" />
+                 Last Name:
+                 <input type="text" name="lName" maxlength="100" size="20" value="" />
 
-                        <br>
-                        <br>
-                        Email:
-                        <input type="text" name="Email" maxlength="100" size="20" value="" />
-                    </p>
-                    <p>Gender:
-                        Male <input type="radio" name="gender" value="male" />
-                        Female <input type="radio" name="gender" value="female" />
-                    </p>
-                    <p>Please add any comments or suggestions you may have.
-                            <br>
-                            <textarea name="comments" rows="5" cols="29"></textarea>
-                    </p>
-                    <p>
-                        <button type="submit" name="submit" value="submit">Subscribe</button>
-                        <button type="clear" name="clear" value="clear">Reset</button>
-                    </p>
-                </form>
-            </div>
+                 <br>
+                 <br>
+                 Email:
+                 <input type="text" name="Email" maxlength="100" size="20" value="" />
+             </p>
+             <p>Gender:
+                 Male <input type="radio" name="gender" value="male" />
+                 Female <input type="radio" name="gender" value="female" />
+             </p>
+             <p>Please add any comments or suggestions you may have.
+                     <br>
+                     <textarea name="comments" rows="5" cols="29"></textarea>
+             </p>
+             <p>
+                 <button onclick=" return vform()" type="submit" name="submit" value="submit">Subscribe</button>
+                 <button type="clear" name="clear" value="clear">Reset</button>
+             </p>
+         </form>
+     </div>
+
+    <br>
+    <br>
+    <p>Join the community!</p>
+    <br>
+    <br>
+    </div>
 </body>
 </html>
